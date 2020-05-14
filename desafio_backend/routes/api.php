@@ -19,5 +19,5 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get("/", "ClienteController@getAll")->name("getAll");
 Route::post("/", "ClienteController@store")->name("store");
-Route::get("/cliente/{id}", "ClienteController@edit")->name("edit");
+Route::post("/cliente/{id}", "ClienteController@edit")->name("edit");
 Route::delete("/cliente/{id}", "ClienteController@delete")->name("delete");
